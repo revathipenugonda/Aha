@@ -7,7 +7,7 @@ import { Mysteryandsupernatural } from '../models/mysteryandsupernatural';
   providedIn: 'root'
 })
 export class MysteryandsupernaturalService {
-  private baseurl="assets/mysteryandsupernatural.json";
+  private baseurl="http://localhost:8081/api/v1/mysteryandsupernaturaldata";
       constructor(private http:HttpClient){}
       onsubmit():Observable<Mysteryandsupernatural[]>{
         return this.http.get<Mysteryandsupernatural[]>(this.baseurl);

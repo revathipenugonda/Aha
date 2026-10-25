@@ -7,7 +7,7 @@ import { Handpickedforyou } from '../models/handpickedforyou';
   providedIn: 'root'
 })
 export class HandpickedforyouService {
-  private baseurl="assets/handpickedforyou.json";
+  private baseurl="http://localhost:8081/api/v1/handpickedforyoudata";
       constructor(private http:HttpClient){}
       onsubmit():Observable<Handpickedforyou[]>{
         return this.http.get<Handpickedforyou[]>(this.baseurl);

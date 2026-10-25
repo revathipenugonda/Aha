@@ -7,7 +7,7 @@ import { Hiddengems } from '../models/hiddengems';
   providedIn: 'root'
 })
 export class HiddengemsService {
-  private baseurl="assets/hiddengems.json";
+  private baseurl="http://localhost:8081/api/v1/hiddengemsdata";
       constructor(private http:HttpClient){}
       onsubmit():Observable<Hiddengems[]>{
         return this.http.get<Hiddengems[]>(this.baseurl);

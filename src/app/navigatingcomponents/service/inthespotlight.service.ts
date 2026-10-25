@@ -7,7 +7,7 @@ import { Inthespotlight } from '../models/inthespotlight';
   providedIn: 'root'
 })
 export class InthespotlightService {
-  private baseurl="assets/inthespotlight.json";
+  private baseurl="http://localhost:8081/api/v1/inthespotlightdata";
       constructor(private http:HttpClient) { }
       onsubmit():Observable<Inthespotlight[]>{
         return this.http.get<Inthespotlight[]>(this.baseurl);

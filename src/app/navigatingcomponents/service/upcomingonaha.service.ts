@@ -7,7 +7,7 @@ import { Upcomingonaha } from '../models/upcomingonaha';
   providedIn: 'root'
 })
 export class UpcomingonahaService {
-  private baseurl="assets/upcomingonaha.json";
+  private baseurl="http://localhost:8081/api/v1/upcomingonahadata";
       constructor(private http:HttpClient){}
       onsubmit():Observable<Upcomingonaha[]>{
         return this.http.get<Upcomingonaha[]>(this.baseurl);

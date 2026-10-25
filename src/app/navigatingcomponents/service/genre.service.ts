@@ -7,7 +7,7 @@ import { Genre } from '../models/genre';
   providedIn: 'root'
 })
 export class GenreService {
-  private baseurl="assets/genre.json";
+  private baseurl="http://localhost:8081/api/v1/genredata";
       constructor(private http:HttpClient){}
       onsubmit():Observable<Genre[]>{
         return this.http.get<Genre[]>(this.baseurl);

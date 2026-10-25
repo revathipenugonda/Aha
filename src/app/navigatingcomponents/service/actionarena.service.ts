@@ -7,7 +7,7 @@ import { Actionarena } from '../models/actionarena';
   providedIn: 'root'
 })
 export class ActionarenaService {
-  private baseurl="assets/actionarena.json";
+  private baseurl="http://localhost:8081/api/v1/actionarenadata";
       constructor(private http:HttpClient){}
       onsubmit():Observable<Actionarena[]>{
         return this.http.get<Actionarena[]>(this.baseurl);

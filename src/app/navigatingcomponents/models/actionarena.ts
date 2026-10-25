@@ -12,5 +12,4 @@ export class Actionarena {
 	movietitle!:string;
 	genre!:string;
 	summary!:string;
-
 }

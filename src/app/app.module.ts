@@ -13,7 +13,7 @@ import { FooterComponent } from './commoncomponents/footer/footer.component';
 import { WatchinteluguandtamilComponent } from './navigatingcomponents/watchinteluguandtamil/watchinteluguandtamil.component';
 import { TrendingnowComponent } from './navigatingcomponents/trendingnow/trendingnow.component';
 import { InthespotlightComponent } from './navigatingcomponents/inthespotlight/inthespotlight.component';
-import { FantasticFAFAComponent } from './navigatingcomponents/fantastic-fafa/fantastic-fafa.component';
+import { CelebratingloveComponent } from './navigatingcomponents/celebratinglove/celebratinglove.component';
 import { NenenanineComponent } from './navigatingcomponents/nenenanine/nenenanine.component';
 import { TamiltimelessclassicsComponent } from './navigatingcomponents/tamiltimelessclassics/tamiltimelessclassics.component';
 import { TelugutimelessclassicsComponent } from './navigatingcomponents/telugutimelessclassics/telugutimelessclassics.component';
@@ -57,7 +57,7 @@ import { RegionalmixComponent } from './navigatingcomponents/regionalmix/regiona
     WatchinteluguandtamilComponent,
     TrendingnowComponent,
     InthespotlightComponent,
-    FantasticFAFAComponent,
+    CelebratingloveComponent ,
     NenenanineComponent,
     TamiltimelessclassicsComponent,
     TelugutimelessclassicsComponent,

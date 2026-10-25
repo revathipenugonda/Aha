@@ -7,7 +7,7 @@ import { Houseofhorrors } from '../models/houseofhorrors';
   providedIn: 'root'
 })
 export class HouseofhorrorsService {
-  private baseurl="assets/houseofhorrors.json";
+  private baseurl="http://localhost:8081/api/v1/houseofhorrorsdata";
       constructor(private http:HttpClient){}
       onsubmit():Observable<Houseofhorrors[]>{
         return this.http.get<Houseofhorrors[]>(this.baseurl);

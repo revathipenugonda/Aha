@@ -7,7 +7,7 @@ import { Retroandclassicgems } from '../models/retroandclassicgems';
   providedIn: 'root'
 })
 export class RetroandclassicgemsService {
-  private baseurl="assets/retroandclassicgems.json";
+  private baseurl="http://localhost:8081/api/v1/retroandclassicgemsdata";
       constructor(private http:HttpClient){}
       onsubmit():Observable<Retroandclassicgems[]>{
         return this.http.get<Retroandclassicgems[]>(this.baseurl);

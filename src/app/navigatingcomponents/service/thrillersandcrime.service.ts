@@ -7,7 +7,7 @@ import { Thrillersandcrime } from '../models/thrillersandcrime';
   providedIn: 'root'
 })
 export class ThrillersandcrimeService {
-  private baseurl="assets/thrillersandcrime.json";
+  private baseurl="http://localhost:8081/api/v1/thrillersandcrimedata";
       constructor(private http:HttpClient){}
       onsubmit():Observable<Thrillersandcrime[]>{
         return this.http.get<Thrillersandcrime[]>(this.baseurl);

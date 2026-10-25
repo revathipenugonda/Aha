@@ -7,7 +7,7 @@ import { Heartfeltdrama } from '../models/heartfeltdrama';
   providedIn: 'root'
 })
 export class HeartfeltdramaService {
-  private baseurl="assets/heartfeltdrama.json";
+  private baseurl="http://localhost:8081/api/v1/heartfeltdramadata";
       constructor(private http:HttpClient){}
       onsubmit():Observable<Heartfeltdrama[]>{
         return this.http.get<Heartfeltdrama[]>(this.baseurl);

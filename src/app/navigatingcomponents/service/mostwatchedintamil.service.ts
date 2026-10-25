@@ -7,7 +7,7 @@ import { Mostwatchedintamil } from '../models/mostwatchedintamil';
   providedIn: 'root'
 })
 export class MostwatchedintamilService {
-  private baseurl="assets/mostwatchedintamil.json";
+  private baseurl="http://localhost:8081/api/v1/mostwatchedintamildata";
       constructor(private http:HttpClient){}
       onsubmit():Observable<Mostwatchedintamil[]>{
         return this.http.get<Mostwatchedintamil[]>(this.baseurl);

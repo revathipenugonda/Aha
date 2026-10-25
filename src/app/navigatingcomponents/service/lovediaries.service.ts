@@ -7,7 +7,7 @@ import { Lovediaries } from '../models/lovediaries';
   providedIn: 'root'
 })
 export class LovediariesService {
-  private baseurl="assets/lovediaries.json";
+  private baseurl="http://localhost:8081/api/v1/lovediariesdata";
       constructor(private http:HttpClient){}
       onsubmit():Observable<Lovediaries[]>{
         return this.http.get<Lovediaries[]>(this.baseurl);

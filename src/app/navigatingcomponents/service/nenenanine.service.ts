@@ -7,7 +7,7 @@ import { Nenenanine } from '../models/nenenanine';
   providedIn: 'root'
 })
 export class NenenanineService {
-  private baseurl="assets/nenenanine.json";
+  private baseurl="http://localhost:8081/api/v1/nenenaninedata";
       constructor(private http:HttpClient){}
       onsubmit():Observable<Nenenanine[]>{
         return this.http.get<Nenenanine[]>(this.baseurl);

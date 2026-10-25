@@ -7,7 +7,7 @@ import { Mollywoodmood } from '../models/mollywoodmood';
   providedIn: 'root'
 })
 export class MollywoodmoodService {
-  private baseurl="assets/mollywoodmood.json";
+  private baseurl="http://localhost:8081/api/v1/mollywoodmooddata";
     constructor(private http:HttpClient){}
     onsubmit():Observable<Mollywoodmood[]>{
       return this.http.get<Mollywoodmood[]>(this.baseurl);

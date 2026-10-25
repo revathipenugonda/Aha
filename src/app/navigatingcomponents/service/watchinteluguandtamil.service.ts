@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class WatchinteluguandtamilService {
-  private baseurl="assets/watchinteluguandtamil.json";
+  private baseurl="http://localhost:8081/api/v1/watchinteluguandtamildata";
       constructor(private http:HttpClient) { }
       onsubmit():Observable<Watchinteluguandtamil[]>{
         return this.http.get<Watchinteluguandtamil[]>(this.baseurl);

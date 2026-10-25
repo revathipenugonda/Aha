@@ -7,7 +7,7 @@ import { Tamiltimelessclassics } from '../models/tamiltimelessclassics';
   providedIn: 'root'
 })
 export class TamiltimelessclassicsService {
-  private baseurl="assets/tamiltimelessclassics.json";
+  private baseurl="http://localhost:8081/api/v1/tamiltimelessclassicsdata";
       constructor(private http:HttpClient){}
       onsubmit():Observable<Tamiltimelessclassics[]>{
         return this.http.get<Tamiltimelessclassics[]>(this.baseurl);
